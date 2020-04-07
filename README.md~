@@ -1,8 +1,4 @@
-# MSDScript
-
-
 Getting started: installation and basic usage
-
  1. Download MSDscript file
      1. In the terminal cd into MSDscript/buildSrcTest/build
      2. Type in the command $ cmake ../
