@@ -1,0 +1,2 @@
+MSDScript in the command line parses the given input, and if it follows the grammar, creates an expression. If there is no flag passed to the command line, then the expression is interpreted to produce a numeric value of the expression. If the command line option “-opt” is given, then the expression is simplified. If the command line argument “-step” is given, then the expression is interpreted using continuation
+instead of recursive calls to interp.
