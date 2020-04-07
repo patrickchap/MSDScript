@@ -10,7 +10,6 @@ Getting started: installation and basic usage
 	2. The CMakeList.txt has instructions to build an executable and a static library
      3. Next type in the command $ cmake --build .
      4. If you ls you can see that there is the executable MSDscript and the static library libMSDLib.a
-     5. The header for the static library MSDScript/single header/msdscript.hpp
      5. If you type $ ./MSDscript 
      	1. Run MSDscript in the terminal
      6. $ ./MSDscript -opt
