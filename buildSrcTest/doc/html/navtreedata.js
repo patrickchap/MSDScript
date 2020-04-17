@@ -22,36 +22,30 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "MDSscript Documentation", "index.html", [
-    [ "Description", "md__description.html", null ],
-    [ "User Guide", "md__user__guide.html", null ],
+  [ "My Project", "index.html", [
+    [ "Description", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__description.html", null ],
+    [ "User Guide", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_env_8cpp.html",
-"expr_8cpp.html#ad342fe46b628482c8832f239f9fd4d84"
+".html",
+"class_catch_1_1_scoped_message.html#a43190843f9eeb84a0b42b0bc95fdf93a",
+"step_8hpp_source.html",
+"struct_catch_1_1_message_stream.html#a9202520faed8882ef469db9f353ec578"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
