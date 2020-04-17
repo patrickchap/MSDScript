@@ -22,4 +22,5 @@ Getting started: installation and basic usage
 
 API documentation: classes, functions, User Guide, and Description
 
- 1.[Documentation](../../MSDScript/blob/master/buildSrcTest/doc/html/index.html)
+ 1. MSDScript/buildSrcTest/doc/html/index.html
+ 
