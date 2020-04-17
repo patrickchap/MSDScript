@@ -23,4 +23,5 @@ Getting started: installation and basic usage
 API documentation: classes, functions, User Guide, and Description
 
  1. MSDScript/buildSrcTest/doc/html/index.html
+ 	1. In the terminal, when in MSDScript fould type $ open buildSrcTest/doc/html/index.html
  
