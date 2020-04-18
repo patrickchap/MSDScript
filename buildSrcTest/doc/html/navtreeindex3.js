@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"struct_catch_1_1_message_stream.html":[2,0,0,39],
+"struct_catch_1_1_message_stream.html#a554c4aff5925a077e9fe9d858217428d":[2,0,0,39,0],
 "struct_catch_1_1_message_stream.html#a9202520faed8882ef469db9f353ec578":[2,0,0,39,1],
 "struct_catch_1_1_name_and_tags.html":[2,0,0,40],
 "struct_catch_1_1_name_and_tags.html#a74062ed1138834a348424eb7ed900c57":[2,0,0,40,2],

@@ -7,8 +7,7 @@ class Env {
 public:
     static PTR(Env) empty;
     
-
-     virtual PTR(Val) lookup(std::string find_name) = 0;
+    virtual PTR(Val) lookup(std::string find_name) = 0;
 };
 
 

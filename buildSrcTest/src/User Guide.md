@@ -1,3 +1,6 @@
+# User Guide
+# Command line
+
 When using the command line the parser follows the following grammar. The command line will have three run modes. When ./MSDScript is run with no flags then it will run in inerp mode. This will create an expression from the input, and interpet that expression to a value. The second mode is opt mode which can be run by adding the "-opt" flag. This will optimize the expression to a simplified expression. The final mode can be run by adding the -step flag. This will interpret the expression using continuations. 
 
 
@@ -178,3 +181,162 @@ All of these expressions can be used to create more complex expressions.
     _let fib = _fun (fib) _fun (x) _if x == 0 _then 1 _else _if x == 2 + -1 _then 1 _else fib(fib)(x + -1) + fib(fib)(x + -2) _in fib(fib)(10)
     
     This is an example of a recursive fibinacci function to find the 10th fib number.
+
+
+# Embed MSDScript
+
+## Overview 
+
+MSDScript can also be embed into an applicated.  Instructions for building a statit library can be found at [MSDScript](https://github.com/patrickchap/MSDScript) in the README. When using this as a static libarary you will have have access to the following classes and subclasses.
+
+## Link to classes and subclasses.  
+
+* Expr
+    * virtual methods:
+        *  bool equals(PTR(Expr) e)
+        *  PTR(Val) interp(PTR(Env) env) 
+        *  PTR(Expr) subst(std::string var, PTR(Val) value)
+        *  bool  contains_variables ()
+        *  std::string  to_string ()
+        *  PTR(Expr) optimize()
+        *  void  step_interp ()
+    * sub classes:
+        * AddExpr
+        * BoolExpr
+        * CallExpr
+        * EqualsEqualsExpr
+        * FunExpr
+        * IfExpr
+        * LetExpr
+        * MultExpr
+        * NumberExpr
+        * VariableExpr
+* Step
+    * methods:
+        * interp_by_steps()
+    *  Public Types
+        *  typedef enum {
+            interp_mode,
+            continue_mode
+            } mode_t;
+* Val
+    * virtual methods:
+        * bool equals(PTR(Val) val) 
+        * PTR(Val) add_to(PTR(Val) other_val)
+        * PTR(Val) mult_with(PTR(Val) other_val)
+        * PTR(Expr) to_expr()
+        * std::string to_string()
+        * bool is_true()
+        * PTR(Val) call(PTR(Val) actual_arg)
+        * void call_step(PTR(Val) actual_arg_val, PTR(Cont) rest)
+    * sub classes:
+        * NumVal
+        * BoolVal
+        * FunVal
+* Cont
+    * virtual methods:
+        * void step_continue()
+    * sub classes:
+        * DoneCont
+        * RightThenAddCont
+        * AddCont
+        * IfBranchCont
+        * RightThenMultCont
+        * MultCont
+        * RightThenEqualEqualCont
+        * EqualEqualCont
+        * LetBodyCont
+        * ArgThenCallCont
+        * CallCont
+* Env
+    * virtual methods:
+        * PTR(Val) lookup(std::string find_name)
+    * member variable
+        * PTR(Env) empty
+    * sub classes:
+        * EmptyEnv
+        * ExtendedEnv
+        
+* Free Function 
+    * PTR(Expr) parse(std::istream &in);
+        
+## Expr Examples:
+        
+Making a NumberExpr:
+                
+    NEW (NumberExpr)(1)
+                
+Making a VariableExpr:
+            
+    NEW (VariableExpr)("x")
+                
+Making a LetExpr:
+            
+    NEW(LetExpr)("f",NEW(FunExpr)( "x",NEW(AddExpr)(NEW(VariableExpr)("x"), NEW(NumberExpr)(1))), NEW(CallExpr)(NEW(VariableExpr)("f"), NEW(NumberExpr)(10)))
+             
+Making a CallExpr:
+             
+    NEW (CallExpr)(NEW (NumberExpr)(1), NEW (NumberExpr)(2)))
+                
+Making a FunExpr:
+            
+    (NEW (FunExpr)("x", NEW (AddExpr)(NEW (NumberExpr)(1), NEW (NumberExpr)(1))))
+                
+
+Interp Expr:
+        
+        Here is an example of using interp for a AddExpr:
+            
+            NEW(AddExpr)(NEW(NumberExpr)(3), NEW(NumberExpr)(1)))->interp(NEW(EmptyEnv)())
+                
+Subst Expr:
+        
+    Subs takes a variable (string) and Val. It will try to substitute the variable or varaibles in the Expr that match the string. 
+            
+    Here is example of subst with a CallExpr:
+            
+    (NEW (CallExpr)(NEW (NumberExpr)(1), NEW (VariableExpr)("x")))
+            ->subst("x", NEW (NumVal)(10))
+            
+    One exeption is in when subst is called with a FunExpr. In that case the string is checked agains the formal_arg in the FunExpr. If it does'nt match the body calls subs with the var and value. Else the FunExpr is returned.
+            
+    (NEW (FunExpr)("x", NEW (AddExpr)(NEW (NumberExpr)(1), NEW (VariableExpr)("x"))))->subst("x", NEW (NumVal)(5))
+            ->equals((NEW (FunExpr)("x", NEW (AddExpr)(NEW (NumberExpr)(1), NEW (VariableExpr)("x")))))
+            
+            
+## Using Parse to creat an Expr
+
+Using Parse you can create an Expr from an std::istream as long as it follows the command line grammer [Parser Grammer](# Command line)
+
+An Example of using parse:
+
+    std::istringstream in("3 + 5");
+    
+    PTR(Expr) e = parse(in);
+    
+    or take user input
+    
+    PTR(Expr) e = parse(std::cin);
+                
+## Val Examples:
+
+Creating a NumVal:
+
+    (NEW (NumVal)(5))
+    
+Creating a BoolVal:
+
+    (NEW (BoolVal)(true) 
+    
+    or 
+    
+    (NEW (BoolVal)(false)
+    
+Creating a FunVal:
+
+    (NEW (FunVal)("x" , NEW (AddExpr)(NEW (NumberExpr)(1), NEW (VariableExpr)("x")), NEW(EmptyEnv)()))
+    
+
+        
+        
+        

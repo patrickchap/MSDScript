@@ -24,7 +24,16 @@ var NAVTREE =
 [
   [ "My Project", "index.html", [
     [ "Description", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__description.html", null ],
-    [ "User Guide", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html", null ],
+    [ "User Guide", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html", [
+      [ "Command line", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html#autotoc_md1", null ],
+      [ "Embed MSDScript", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html#autotoc_md2", [
+        [ "Overview", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html#autotoc_md3", null ],
+        [ "Link to classes and subclasses.", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html#autotoc_md4", null ],
+        [ "Expr Examples:", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html#autotoc_md5", null ],
+        [ "Using Parse to creat an Expr", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html#autotoc_md6", null ],
+        [ "Val Examples:", "md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__user__guide.html#autotoc_md7", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -42,10 +51,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"class_catch_1_1_scoped_message.html#a43190843f9eeb84a0b42b0bc95fdf93a",
-"step_8hpp_source.html",
-"struct_catch_1_1_message_stream.html#a9202520faed8882ef469db9f353ec578"
+"_env_8hpp_source.html",
+"md___users_patrickchapple__m_s_d_script_repo__m_s_d_script_build_src_test_src__description.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

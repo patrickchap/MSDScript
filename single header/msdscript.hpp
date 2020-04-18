@@ -990,3 +990,5 @@ public:
     
     void call_step(PTR(Val) actual_arg_val, PTR(Cont) rest);
 };
+
+PTR(Expr) parse(std::istream &in);

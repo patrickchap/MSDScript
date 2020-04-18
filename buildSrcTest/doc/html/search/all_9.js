@@ -1,28 +1,5 @@
 var searchData=
 [
-  ['mapgenerator_85',['MapGenerator',['../class_catch_1_1_generators_1_1_map_generator.html',1,'Catch::Generators']]],
-  ['matchallof_86',['MatchAllOf',['../struct_catch_1_1_matchers_1_1_impl_1_1_match_all_of.html',1,'Catch::Matchers::Impl']]],
-  ['matchanyof_87',['MatchAnyOf',['../struct_catch_1_1_matchers_1_1_impl_1_1_match_any_of.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_88',['MatcherBase',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20argt_20_3e_89',['MatcherBase&lt; ArgT &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20double_20_3e_90',['MatcherBase&lt; double &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20std_3a_3aexception_20_3e_91',['MatcherBase&lt; std::exception &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20std_3a_3astring_20_3e_92',['MatcherBase&lt; std::string &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20std_3a_3avector_3c_20t_20_3e_20_3e_93',['MatcherBase&lt; std::vector&lt; T &gt; &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_94',['MatcherMethod',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20argt_20_3e_95',['MatcherMethod&lt; ArgT &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20double_20_3e_96',['MatcherMethod&lt; double &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20std_3a_3aexception_20_3e_97',['MatcherMethod&lt; std::exception &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20std_3a_3astring_20_3e_98',['MatcherMethod&lt; std::string &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20std_3a_3avector_3c_20t_20_3e_20_3e_99',['MatcherMethod&lt; std::vector&lt; T &gt; &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20t_20_3e_100',['MatcherMethod&lt; T &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matcheruntypedbase_101',['MatcherUntypedBase',['../class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base.html',1,'Catch::Matchers::Impl']]],
-  ['matchexpr_102',['MatchExpr',['../class_catch_1_1_match_expr.html',1,'Catch']]],
-  ['matchnotof_103',['MatchNotOf',['../struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html',1,'Catch::Matchers::Impl']]],
-  ['messagebuilder_104',['MessageBuilder',['../struct_catch_1_1_message_builder.html',1,'Catch']]],
-  ['messageinfo_105',['MessageInfo',['../struct_catch_1_1_message_info.html',1,'Catch']]],
-  ['messagestream_106',['MessageStream',['../struct_catch_1_1_message_stream.html',1,'Catch']]],
-  ['mult_5fwith_107',['mult_with',['../class_num_val.html#ac97ed74d7f1514b31fec1bfcd1b4706c',1,'NumVal::mult_with()'],['../class_bool_val.html#a88fd6c6aefa5d0bd4a6f2551636fff9d',1,'BoolVal::mult_with()'],['../class_fun_val.html#a816f4064da51a5ce11d822197168a104',1,'FunVal::mult_with()']]],
-  ['multcont_108',['MultCont',['../class_mult_cont.html',1,'']]],
-  ['multexpr_109',['MultExpr',['../class_mult_expr.html',1,'']]]
+  ['numberexpr_31',['NumberExpr',['../class_number_expr.html',1,'NumberExpr'],['../class_number_expr.html#abf7e95dd7c4fd0a6de8b8c1918ecbf00',1,'NumberExpr::NumberExpr()']]],
+  ['numval_32',['NumVal',['../class_num_val.html',1,'']]]
 ];
