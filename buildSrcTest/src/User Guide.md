@@ -4,29 +4,28 @@
 When using the command line the parser follows the following grammar. The command line will have three run modes. When ./MSDScript is run with no flags then it will run in inerp mode. This will create an expression from the input, and interpet that expression to a value. The second mode is opt mode which can be run by adding the "-opt" flag. This will optimize the expression to a simplified expression. The final mode can be run by adding the -step flag. This will interpret the expression using continuations. 
 
 
-        〈expr〉 = 〈comparg〉
+    〈expr〉 = 〈comparg〉
 
-		 | 〈comparg〉 == 〈expr〉
+        | 〈comparg〉 == 〈expr〉
  
+    〈comparg〉 = 〈addend〉
 
-	〈comparg〉 = 〈addend〉
+        | 〈addend〉 + 〈comparg〉
 
-		  | 〈addend〉 + 〈comparg〉
-
-
-	〈addend〉 = 〈multicand〉
-		  | 〈multicand〉 * 〈addend〉
+    〈addend〉 = 〈multicand〉
+        | 〈multicand〉 * 〈addend〉
  
-	 〈multicand〉 = 〈inner〉
-  	  	    | 〈multicand〉 ( 〈expr〉 )
-	 〈inner〉 = 〈number〉
-	  	  | ( 〈expr〉 )
-	          | 〈variable〉
- 	   	    | _let 〈variable〉 = 〈expr〉 _in 〈expr〉
- 	   	    | _true
-   		    | _false
-    		    | _if 〈expr〉 _then 〈expr〉 _else 〈expr〉
-   		    | _fun ( 〈variable〉 ) 〈expr〉
+    〈multicand〉 = 〈inner〉
+        | 〈multicand〉 ( 〈expr〉 )
+        
+    〈inner〉 = 〈number〉
+        | ( 〈expr〉 )
+        | 〈variable〉
+        | _let 〈variable〉 = 〈expr〉 _in 〈expr〉
+        | _true
+        | _false
+        | _if 〈expr〉 _then 〈expr〉 _else 〈expr〉
+        | _fun ( 〈variable〉 ) 〈expr〉
 
 
 Syntax and Expressions:
