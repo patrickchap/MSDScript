@@ -17,6 +17,9 @@ Getting started: installation and basic usage
      	1. Run MSDscript in optimization mode 
      7. $ ./MSDscript -step
      	1. Runs MSDscript using continuations
+     8. Examples:
+        1. echo "1+1" | ./MSDscript
+        2. ./MSDscript < ../fib.txt 
 
 
 
